@@ -12,7 +12,7 @@ data "aws_instance" "instance" {
 }
 
 resource "aws_route53_record" "jenkins" {
-  name    = "jenkins.techdda.co"
+  name    = "jenkins.techadda.co"
   type    = "A"
   zone_id = "Z02181513KJGBXLJM7332"
   records = [data.aws_instance.instance.public_ip]
