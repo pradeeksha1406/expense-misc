@@ -8,7 +8,7 @@ terraform {
 }
 
 data "aws_instance" "instance" {
-  instance_id = "i-0e33dca48d371c58d"
+  instance_id = "i-0ca97667f7be26a7f"
 }
 
 resource "aws_route53_record" "sonarqube" {
