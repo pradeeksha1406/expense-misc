@@ -1,12 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "terraform-p100"
-    key    = "misc/sonarqube-ip/terraform.tfstate"
-    region = "us-east-1"
-
-  }
-}
-
 data "aws_instance" "instance" {
   instance_id = "i-0ca97667f7be26a7f"
 }
